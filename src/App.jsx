@@ -1,25 +1,11 @@
-import { useState } from 'react'
 import './App.css'
+import Board from './Square.jsx'
 
 function App() {
-  const [count, setCount] = useState(0);
-  
-  function handleClick() {
-    setCount(count + 1)
-  }
-
   return (
     <>
-      <Button onClick={handleClick} count={count}/>
-      <Button onClick={handleClick} count={count}/>
+    <Board />
     </>
-  )
-}
-
-function Button({onClick, count}) {
-
-  return (
-    <button onClick={onClick}>Clicked {count} times</button>
   )
 }
 
