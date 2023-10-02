@@ -1,11 +1,10 @@
+import React from 'react'
 import './App.css'
-import Board from './Square.jsx'
+import Item from './assets/Item'
 
-function App() {
+const App = () => {
   return (
-    <>
-    <Board />
-    </>
+    <Item />
   )
 }
 
